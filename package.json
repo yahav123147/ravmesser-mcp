@@ -1,0 +1,27 @@
+{
+  "name": "ravmesser-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for Rav Messer email marketing API",
+  "type": "module",
+  "main": "build/index.js",
+  "bin": {
+    "ravmesser-mcp": "build/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "start": "node build/index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.25.0",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.9.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
